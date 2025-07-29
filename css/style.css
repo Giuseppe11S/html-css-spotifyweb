@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cnt-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.cnt-side {
+  width: 300px;
+  background-color: black;
+  height: 100%;
+}
+
+.cnt-main-right {
+  flex: 1;
+  background-color: rgb(20, 25, 34);
+  overflow-y: auto;
+}
+
+.cnt-call-action {
+  height: 100px;
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+}
+
+.cnt-footer-play {
+  height: 90px;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
