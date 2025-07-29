@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .cnt-layout {
   height: 100vh;
   display: flex;
@@ -13,26 +16,105 @@
 .content-area {
   flex: 1;
   display: flex;
-  overflow: hidden;
 }
 
+/* side nav-bar */
+
 .cnt-side {
-  width: 300px;
+  padding-top: 9px;
+  padding-left: 15px;
+  width: 250px;
   background-color: black;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
 }
+
+.cnt-lyt-y{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.cnt-side img{
+  width: 150px;
+}
+.cnt-links span{
+  color: white;
+}
+
+.cnt-links{
+  flex: 1;
+}
+
+/* per centrare il testo con l'immagine */
+.links-pad{
+  display: flex;
+  align-items: center;
+}
+
+.links-pad span{
+  width: 100%;
+  padding-left: 5px;
+}
+
+.links-pad a{
+  color: rgb(103, 103, 103);
+  text-decoration: none;
+}
+
+.links-pad:hover{
+  color: white;
+  border-left: 2px solid rgb(173, 255, 46);
+}
+
+.links-pad:first-child{
+  margin-top: 10px;
+}
+
+.cnt-links{
+  padding-top: 15px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cnt-links img{
+  width: 25px;
+}
+/* fine side nav-bar */
 
 .cnt-main-right {
   flex: 1;
   background-color: rgb(20, 25, 34);
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .cnt-call-action {
-  height: 100px;
-  background-color: orange;
-  position: fixed;
+  height: 80px;
+  background-color: rgb(9, 11, 18);
+  position: sticky;
   width: 100%;
+}
+
+.cnt-btn-act{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cnt-btn-act button{
+  background-color: transparent;
+  color: white;
+  border: 1px solid;
+  padding: 10px 35px;
+  margin-top: calc(45px / 2);
+  margin-right: 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 
 .cnt-footer-play {
@@ -41,4 +123,23 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
+}
+
+.cnt-section-button{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cnt-section-button span{
+  font-size: 14px;
+}
+
+.cnt-section-button{
+  color: rgb(122, 124, 130);
+}
+
+#brd-btm{
+  border-bottom: 1px solid rgb(173, 255, 46);
 }

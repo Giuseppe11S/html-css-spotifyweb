@@ -11,16 +11,58 @@
   <!-- container per layout verticale -->
   <div class="cnt-layout">
     <div class="content-area">
-      <div class="cnt-side"></div>
-      <div class="cnt-main-right">
-        <div class="cnt-call-action"></div>
+      
+      <!-- barra laterale sinistra -->
+      <div class="cnt-side">
+          <!-- Logo Spotify -->
+           <div class="cnt-img">
+           <img src="img/logo.svg" alt="logo spotify">
+           </div>
+
+           <div class="cnt-links">
+            <div class="links-pad">
+              <img class="icn-side" src="img/home.svg" alt="icona home">
+              <span><a href="">Home</a></span>
+            </div>
+            <div class="links-pad">
+              <img src="img/search.svg" alt="icona cerca">
+              <span><a href="">Cerca</a></span>
+            </div>
+            <div class="links-pad">
+              <img src="img/libreria.svg" alt="icona libreria">
+              <span><a href="">La tua libreria</a></span>
+            </div>
+           </div>
       </div>
+      
+      <!-- container con overflow-y -->
+      <div class="cnt-main-right">
+        <div class="cnt-call-action">
+          <div class="cnt-btn-act">
+          <button>Effettua l'upgrade</button>
+        </div>
+        </div>
+
+
+        <!-- sezione bottoni -->
+        <div class="cnt-section-button">
+          <span>IN E<span id="brd-btm">VIDE</span>NZA</span>
+          <span>PODCAST</span>
+          <span>CLASSIFICHE</span>
+          <span>GENERI E MOOD</span>
+          <span>NUOVE USCITE</span>
+          <span>SCOPRI</span>
+        </div>
+      </div>
+
     </div>
+
     <!-- container con barra per play  -->
     <div class="cnt-footer-play">
       <div class="cnt-footer"></div>
     </div>
   </div>
 </body>
+
 
 </html>
