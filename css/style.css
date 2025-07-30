@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .cnt-layout {
   height: 100vh;
@@ -42,6 +42,11 @@ body{
 .cnt-side img{
   width: 150px;
 }
+
+.cnt-img img{
+  padding-top: 10px;
+  cursor: pointer;
+}
 .cnt-links span{
   color: white;
 }
@@ -59,6 +64,10 @@ body{
 .links-pad span{
   width: 100%;
   padding-left: 5px;
+}
+
+.links-pad a:hover{
+  color: white;
 }
 
 .links-pad a{
@@ -96,7 +105,7 @@ body{
 
 .cnt-call-action {
   height: 80px;
-  background-color: rgb(9, 11, 18);
+  background-color: rgba(9, 11, 18, 0.099);
   position: sticky;
   width: 100%;
 }
@@ -115,6 +124,7 @@ body{
   margin-right: 10px;
   border-radius: 30px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .cnt-footer-play {
@@ -129,11 +139,19 @@ body{
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .cnt-section-button span{
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.80px;
+  cursor: pointer;
+}
+
+.cnt-section-button span:hover{
+  color: white;
 }
 
 .cnt-section-button{
@@ -142,4 +160,23 @@ body{
 
 #brd-btm{
   border-bottom: 1px solid rgb(173, 255, 46);
+}
+
+.title-sec-songs{
+  color: white;
+  padding: 5px 10px;
+}
+
+.cnt-all-songs{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cnt-all-songs .cnt-song:first-child{
+  padding-left: 10px;
+}
+.cnt-song img{
+  width: 190px;
 }
