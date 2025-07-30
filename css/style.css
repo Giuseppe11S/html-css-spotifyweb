@@ -33,6 +33,7 @@ body{
   align-content: center;
 }
 
+
 .cnt-lyt-y{
   display: flex;
   flex-direction: column;
@@ -42,6 +43,7 @@ body{
 
 .cnt-side img{
   width: 150px;
+  margin-left: 15px;
 }
 
 .cnt-img img{
@@ -57,6 +59,10 @@ body{
 }
 
 /* per centrare il testo con l'immagine */
+
+.links-pad img{
+  margin-left: 15px;
+}
 .links-pad{
   display: flex;
   align-items: center;
@@ -172,6 +178,10 @@ body{
   padding: 5px 10px;
 }
 
+.title-mg{
+  margin-left: 10px;
+}
+
 .under-tit-songs{
   padding-left: 10px;
   color: gray;
@@ -209,6 +219,11 @@ body{
   flex-wrap: wrap;
 }
 
+.cnt-all-songs,
+.cnt-all-songs2{
+  text-align: end;
+}
+
 .cnt-all-songs .cnt-song:first-child,
 .cnt-all-songs2 .cnt-song:first-child{
   padding-left: 20px;
@@ -216,4 +231,9 @@ body{
 
 .cnt-song img{
   width: 180px;
+}
+
+.cnt-song{
+  cursor: pointer;
+  height: fit-content;
 }
