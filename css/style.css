@@ -19,6 +19,15 @@ body{
   min-height: 0; 
 }
 
+.cnt-footer-play {
+  height: 70px;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
 /* side nav-bar */
 
 /* nav-bar posizionata a sinistra */
@@ -61,11 +70,106 @@ body{
   color: white;
 }
 
-.cnt-links{
-  flex: 1;
+/* PLAYLIST */
+.cnt-playlist{
+  display: flex;
+  flex-direction: column;
+}
+
+.cnt-list-playlist{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cnt-playlist{
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.cnt-bottom-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.cnt-user{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.divider-grey{
+  margin-top: 10px;
+  border: 1px solid rgb(122, 124, 130);
+  width: 80%;
+}
+
+#profile-name{
+  color: white;
+}
+.cnt-create-playlist{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#btn-create{
+  border: none;
+  padding: 1px 12px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.cnt-playlist h4{
+  color: white;
+}
+
+.cnt-playlist span{
+  color: rgb(122, 124, 130);
+  font-weight: 600;
+}
+
+.cnt-list-playlist span{
+  padding: 10px 0px;
+  font-size: 13px;
+}
+
+.cnt-playlist h4{
+  color: white;
+  margin: 10px 0px;
+}
+
+#icon-download::before{
+  content: "\f358";
+  font-family: "Font Awesome 6 Free";
+  background-color: transparent;
+  padding-right: 4px;
+}
+
+#icon-download{
+  font-size: 12px;
+}
+
+#icon-profile{
+  width: 25px;
+  height: 25px;
+  background-color: rgb(122, 124, 130);
+  border-radius: 50px;
+  color: white;
+  margin-right: 10px;
+  padding-top: 10px;
 }
 
 /* elementi di navigazione della side bar */
+
+.first-icon{
+  color: white;
+}
+
+#first-link{
+  color: white;
+}
 
 .links-pad{
   display: flex;
@@ -101,7 +205,6 @@ body{
 
 .links-pad:hover{
   color: white;
-  border-left: 2px solid rgb(173, 255, 46);
 }
 
 .links-pad:first-child{
@@ -117,8 +220,8 @@ body{
 
 .cnt-links img{
   width: 25px;
-  color: ;
 }
+
 /* fine side nav-bar */
 
 /* contenuto scrollabile, card delle canzoni */
@@ -160,15 +263,6 @@ body{
   transform: scale(1.1);
 }
 
-.cnt-footer-play {
-  height: 90px;
-  background-color: #282828;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  flex-shrink: 0;
-}
-
 .cnt-section-button{
   padding-top: 100px;
   display: flex;
@@ -177,20 +271,19 @@ body{
   margin-bottom: 40px;
 }
 
-.cnt-section-button span{
+.cnt-section-button a{
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.80px;
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(122, 124, 130);
 }
 
-.cnt-section-button span:hover{
+.cnt-section-button a:hover{
   color: white;
 }
 
-.cnt-section-button{
-  color: rgb(122, 124, 130);
-}
 
 #brd-btm{
   border-bottom: 1px solid rgb(173, 255, 46);
@@ -202,6 +295,7 @@ body{
 }
 
 .title-mg{
+  margin-top: 30px;
   margin-left: 10px;
 }
 
@@ -259,4 +353,8 @@ body{
 .cnt-song{
   cursor: pointer;
   height: fit-content;
+}
+
+.circle-img img{
+  border-radius: 100px;
 }
