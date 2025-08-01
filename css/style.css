@@ -7,26 +7,225 @@
 body{
   font-family: "Montserrat", sans-serif;
 }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 .cnt-layout {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .content-area {
   flex: 1;
   display: flex;
   min-height: 0; 
+  overflow: hidden;
 }
 
+/* FOOTER */
+
 .cnt-footer-play {
-  height: 70px;
+  height: 90px;
   background-color: #282828;
   display: flex;
-  align-items: center;
   padding: 0 20px;
   flex-shrink: 0;
+  width: 100%;
+  align-items: center;
 }
+
+.cnt-footer-left{
+  display: flex;
+}
+
+.cnt-btn-upper{
+  display: flex;
+  gap: 30px;
+}
+.cnt-play-info{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.cnt-title-player{
+  display: flex;
+  flex-direction: column;
+}
+.cnt-btn-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  flex: 1;
+}
+
+/* .cnt-play-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 600px;
+  justify-content: space-between;
+} */
+
+.cnt-play-line {
+  width: 100%;
+  max-width: 100%; 
+}
+
+.timer-play {
+  font-size: 12px;
+  color: white;
+}
+
+.cnt-icon-ft{
+  display: flex;
+  align-items: center;
+}
+
+.cnt-play-info img{
+  width: 50px;
+}
+
+.cnt-icon-ft{
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.cnt-player{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.cnt-play-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-fav::before{
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  color:rgb(114, 116, 122) ;
+}
+
+.icon-folder::before{
+  content: "\f07b";
+  font-family: "Font Awesome 6 Free";
+  color:rgb(114, 116, 122) ;
+}
+
+.shuffle-icon::before{
+  content: "\f074";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.prev-track::before{
+  content: "\f048";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.play-icon-rg::before{
+  content: "\f144";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.next-track::before{
+  content: "\f051";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.repeat-icon::before{
+  content: "\f01e";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+#author-play{
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+#song-name{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(114, 116, 122);
+}
+
+.timer-play{
+  font-weight: 600;
+}
+
+.icon-menu::before{
+  content: "\f0c9";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.icon-desktop::before{
+  content: "\f108";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.icon-volumeup::before{
+  content: "\f028";
+  font-family: "Font Awesome 6 Free";
+  color: white;
+  font-weight: 900;
+}
+
+.player-right{
+  width: 150px;
+  height: 4px;
+  background-color: #555;
+}
+
+.player-rg-prg{
+  width: 25%;
+  height: 4px;
+  background-color: white;
+}
+
+.line-play{
+  height: 4px;
+  width: 500px;
+  background-color: #555;
+}
+
+.line-pg{
+  height: 4px;
+  width: 25%;
+  background-color: white;
+}
+
+
+/* fine footer */
 
 /* side nav-bar */
 
@@ -58,6 +257,7 @@ body{
   margin-top: 10px;
 }
 
+/* DISPLAY IN HOVER DELLE IMG  */
 .icon-side{
   padding-left: 15px;
   cursor: pointer;
@@ -230,6 +430,7 @@ body{
   background-color: rgb(20, 25, 34);
   overflow-y: scroll;
   min-height: 0; 
+  height: calc(100vh - 90px);
 }
 
 .cnt-call-action {
@@ -241,6 +442,7 @@ body{
   position: fixed;
   width: calc(100% - 250px);
   left: 250px;
+  z-index: 1;
 }
 
 /* bottone call-to-action */
@@ -264,11 +466,10 @@ body{
 }
 
 .cnt-section-button{
-  padding-top: 100px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 40px;
 }
 
 .cnt-section-button a{
@@ -343,7 +544,7 @@ body{
 
 .cnt-all-songs .cnt-song:first-child,
 .cnt-all-songs2 .cnt-song:first-child{
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 .cnt-song img{
@@ -353,8 +554,158 @@ body{
 .cnt-song{
   cursor: pointer;
   height: fit-content;
+  position: relative;
+  display: inline-block;
+}
+
+.cnt-song img:hover {
+  opacity: 0.5;
 }
 
 .circle-img img{
   border-radius: 100px;
+}
+
+.play-icon {
+  position: absolute;
+  top: calc(170px/2);
+  left: calc(170px/2);
+  color: white;
+  display: none;
+}
+
+.cnt-song:hover .play-icon {
+  display: block;
+}
+
+/* RESPONSIVE DESIGN TABLET */
+
+@media screen and (max-width: 878px) {
+  .cnt-side{
+    width: 240px;
+  }
+  .cnt-call-action {
+    width: calc(100% - 240px);
+    left: 239px;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+  
+  .cnt-play-line {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .player-right {
+    width: 80px;
+  }
+
+  .cnt-section-button{
+    margin-top: 100px;
+  }
+
+  .cnt-player{
+    gap: 1px;
+  }
+
+  .cnt-play-right{
+    gap: 9px;
+  }
+
+  .line-play{
+    width: 250px;
+  }
+
+  .cnt-song img{
+    width: 130px;
+  }
+
+  .cnt-info-songs h4 {
+    font-size: 15px;
+}
+.long-info-song{
+  width: 130px;
+}
+
+.long-info-song br{
+  display: none;
+}
+
+#resp-none{
+  display: none;
+}
+
+.cnt-icon-ft{
+  margin-left: 20px;
+}
+}
+
+/* fine responsive design tablet */
+
+/* responsive design mobile */
+@media screen and (max-width: 639px){
+
+  .cnt-call-action {
+    width: calc(100% - 250px);
+    left: 0;
+    z-index: 1;
+  }
+  
+  .cnt-play-line {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .player-right {
+    width: 40px;
+  }
+
+  .cnt-section-button{
+    margin-top: 100px;
+  }
+
+  .cnt-player{
+    gap: 1px;
+  }
+
+  .cnt-play-right{
+    gap: 9px;
+  }
+
+  .line-play{
+    width: 200px;
+  }
+
+  .cnt-song img{
+    width: 130px;
+  }
+
+  .cnt-info-songs h4 {
+    font-size: 15px;
+}
+.long-info-song{
+  width: 130px;
+}
+
+.long-info-song br{
+  display: none;
+}
+
+#resp-none{
+  display: none;
+}
+
+.cnt-all-songs img:nth-child(3){
+  margin-left: 10px;
+}
+.cnt-icon-ft{
+  display: flex;
+  flex-direction: column
+}
 }

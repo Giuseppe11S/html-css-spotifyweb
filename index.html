@@ -96,6 +96,7 @@
         <div class="cnt-all-songs">
           <div class="cnt-song">
             <img src="img/metal_lifting.jpg" alt="">
+            <i class="fa-solid fa-play play-icon"></i>
             <div class="display-transp"></div>
             <div class="cnt-info-songs">
               <h4>Heavy Metal</h4>
@@ -105,21 +106,23 @@
 
             <div class="cnt-song">
               <img src="img/stranger.jpeg" alt="">
+              <i class="fa-solid fa-play play-icon"></i>
               <div class="display-transp"></div>
               <div class="cnt-info-songs">
-                <h4>
+                <h4 class="long-info-song">
                     Stranger Things, Vol. <br>
                     1(a Netflix Original <br>
                     Series Soundtrack)
                   </h4>
                 <span class="subtitle-songs">
-                  Kyle Dixon & Micheal Stein
+                  Kyle Dixon & Micheal <span id="resp-none">Stein</span>
                 </span>
               </div>
             </div>
 
             <div class="cnt-song">
               <img src="img/aquietplace.jpeg" alt="">
+              <i class="fa-solid fa-play play-icon"></i>
               <div class="display-transp"></div>
               <div class="cnt-info-songs">
                 <h4>A quiet place</h4>
@@ -129,6 +132,7 @@
 
             <div class="cnt-song">
               <img src="img/split.jpeg" alt="">
+              <i class="fa-solid fa-play play-icon"></i>
               <div class="display-transp">
                 <img src="" alt="">
               </div>
@@ -140,6 +144,7 @@
 
             <div class="cnt-song">
               <img src="img/cure.jpeg" alt="">
+              <i class="fa-solid fa-play play-icon"></i>
               <div class="display-transp"></div>
               <div class="cnt-info-songs">
                 <h4>A cure for wellness</h4>
@@ -149,6 +154,7 @@
 
             <div class="cnt-song">
               <img src="img/sinister.jpeg" alt="">
+              <i class="fa-solid fa-play play-icon"></i>
               <div class="display-transp"></div>
               <div class="cnt-info-songs">
                 <h4>Sinister</h4>
@@ -213,9 +219,53 @@
       </div>
     </div>
 
-    <!-- container con barra per play  -->
+<!-- sezione footer -->
     <div class="cnt-footer-play">
-      <div class="cnt-footer"></div>
+      <div class="cnt-footer-left">
+        <div class="cnt-play-info">
+          <img src="img/sinister.jpeg" alt="">
+          <div class="cnt-title-player">
+          <span id="author-play">Sinister</span>
+          <span id="song-name">Brano nome</span>
+          </div>
+        </div>
+
+        <div class="cnt-icon-ft">
+         <span class="icon-footer icon-fav"></span>
+         <span class="icon-footer icon-folder"></span>
+        </div>
+      </div>
+
+        <div class="cnt-player">
+            <div class="cnt-btn-upper">
+              <span class="shuffle-icon"></span>
+              <span class="prev-track"></span>
+              <span class="play-icon-rg"></span>
+              <span class="next-track"></span>
+              <span class="repeat-icon"></span>
+            </div>
+            <div class="cnt-btn-bottom">
+              <div class="cnt-play-line">
+               <span class="timer-play">0:25</span>
+                <div class="line-play">
+                  <div class="line-pg"></div>
+                </div>
+                  <div class="line-play-prg"></div>
+                 <span class="timer-play">4:35</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="cnt-play-right">
+          <span class="icon-menu"></span>
+          <span class="icon-desktop"></span>
+          <span class="icon-volumeup"></span>
+          <div class="cnt-line-play">
+           <div class="player-right">
+              <div class="player-rg-prg"></div>
+           </div>
+          </div>
+        </div>
     </div>
   </div>
 </body>
