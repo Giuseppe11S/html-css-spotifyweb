@@ -66,13 +66,13 @@ html, body {
   flex: 1;
 }
 
-/* .cnt-play-line {
+.cnt-play-line {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 600px;
   justify-content: space-between;
-} */
+}
 
 .cnt-play-line {
   width: 100%;
@@ -470,6 +470,7 @@ html, body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 100px;
 }
 
 .cnt-section-button a{
@@ -648,11 +649,34 @@ html, body {
 /* responsive design mobile */
 @media screen and (max-width: 639px){
 
+  .cnt-footer-play {
+    padding: 0px 5px;
+  }
+  .cnt-side{
+    width: 230px;
+  }
+
+  .cnt-side img{
+    margin-left: 15px;
+  }
+
+  .cnt-song img{
+    width: 180px;
+  }
+
+  .mg-left-img{
+    margin-left: 15px;
+  }
+
+  .cnt-side{
+    padding-left: 5px;
+  }
   .cnt-call-action {
-    width: calc(100% - 250px);
-    left: 0;
+    width: calc(100% - 230px);
+    left: 230px;
     z-index: 1;
   }
+
   
   .cnt-play-line {
     max-width: 100%;
@@ -663,7 +687,7 @@ html, body {
   }
 
   .player-right {
-    width: 40px;
+    width: 80px;
   }
 
   .cnt-section-button{
@@ -679,11 +703,7 @@ html, body {
   }
 
   .line-play{
-    width: 200px;
-  }
-
-  .cnt-song img{
-    width: 130px;
+    width: 150px;
   }
 
   .cnt-info-songs h4 {
